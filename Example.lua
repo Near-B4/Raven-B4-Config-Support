@@ -4,12 +4,10 @@ shared.RavenB4Started = true -- REQUIRED!!!!!!
 shared.RavenConfigName = 'Default Config' --Whatever your Config name is!
 shared.WaterMark = "Random Config Name"
 shared.WaterMarkColor = Color3.fromRGB(255,255,255)
---shared.RavenBlacklist = {"ahsf-ghjfk-ijrh-rtes-3thr"} you have to put a HWID of a player in this Whitelist Table to Whitelist them!
---shared.RavenWhitelist = {"ahsf-ghjfk-ijrh-rtes-3thr"} you have to put a HWID of a player in this Blacklist Table to blacklist them!
 
-local RavenConfig = loadstring(game:HttpGet('https://raw.githubusercontent.com/goinglikeatrainlol/RavenB4Roblox/main/Raven%20Main%20Loader'))()
+local RavenConfig = loadstring(game:HttpGet('https://github.com/COOLROBOLOS/Raven-B4-Config-Support'))()
 
-RavenConfig:createnotification("Config Support Loaded!",5)
+shared:createnotification("Config Support Loaded!",2,"Config",0.5)
 
 --Tab = RavenConfig:CreateWindow("Name",Position,"IconId")
 
