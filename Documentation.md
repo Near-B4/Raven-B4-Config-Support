@@ -10,23 +10,16 @@
 - Sliders
 - Savesystem (Best and Easiest Savesystem by far!)
 - Custom Watermark
-- Blacklist/Whitelist System
 - More info!
 
 ...more features like colorpickers or dropdowns are coming soon aswell!
 
 ## Raven B4 Loadstring (REQUIRED)
-Raven B4 with all the Modules included so you can start without having to spend alot of time doing the basics!
+`REQUIRED` To make your first Raven B4 config, you must firstly link the Raven B4 loader in your script!
 ```lua
 shared.RavenB4Started = true
 local RavenConfig = loadstring(game:HttpGet('https://raw.githubusercontent.com/goinglikeatrainlol/RavenB4Roblox/main/Raven%20Main%20Loader'))()
 ```
-Emtpy Raven B4 so you can start from sratch! (Recommended for Roblox Games that Raven B4 doesn't support!)
-```lua
-shared.RavenB4Started = true
-local RavenConfig = loadstring(game:HttpGet('https://raw.githubusercontent.com/goinglikeatrainlol/RavenB4Roblox/main/Raven%20NoModules%20Loader'))()
-```
-Pick one of the above, but dont put them both in since it will mess up everything!
 
 `shared.RavenB4Started` is very IMPORTANT since it tells Raven B4 that your making a Config. (IF YOU DO NOT HAVE `shared.RavenB4Started` THE CONFIGS WON'T WORK!)
 
@@ -109,11 +102,14 @@ Callback = 'function' - The function of the slider.
 
 ## Creating a Notification
 ```lua
-RavenConfig:createnotification("Message",Time)
+shared:createnotification("Message",Time)
+shared:createnotification("Message",Time,Title,Animation)
 
 --[[
 Message = 'string' - the message you want to tell the Player.
 Time = 'number' - the amount of time you want the Notification to stay.
+Title = 'string' - the text that shows up above the Message.
+Animation = 'number' - the time it takes for the animation to become visable `tween`
 ]]
 ```
 ## Finishing your Config! (REQUIRED!)
@@ -144,32 +140,8 @@ shared.WaterMarkColor = Color3.fromRGB(255,255,255) -- Put any RGB Value you wan
 
 Put these `shared` values above the loadstring for it to function correctly!
 
-## Whitelist/Blacklist
-```lua
-shared.RavenWhitelist = {"HWID of a User","HWID of another User"}
-shared.RavenBlacklist = {"HWID of a User","HWID of another User"}
-```
-`shared.RavenWhitelist` will kick anyone that doesn't have the same HWID as the one in the table, the Whitelist automaticly deletes itself when its done checking!
-
-`shared.RavenBlacklist` will kick anyone that does have the same HWID as the one in the table, the Blacklist automaticly deletes itself when its done checking!
-
-If you use any of these Whitelists or Blacklists, put them above your loadstring for it to function correctly!
-
-## Script Protection
-`Lua Obfuscators` are something you want to keep in mind when creating your configs, sadly Raven B4 doesn't offer any obfuscators for lua, but I do have some to recommend, mainly MoonSec V3 since it offers pretty good protection that doesn't allow people to skid of your configs + it is 100% free!
-(You can also pay for an obfuscator if you're rich enough, but MoonSec V3 offers pretty good lua protection!)
-
-## HTTP interceptor!
-`Webhooks` are also something I kept in mind when creating Raven B4 since most people use it for malicious intent!
-
-Thats why Raven B4 has a HTTP interceptor built in that allows you to execute Configs without worrying about it doing something in the background.
-
 ## Uninjecting Raven B4
 `COMING SOON!`
 
 # Thanks for the Support! ❤️
-The amount of People actually waiting for this Update and supporting it is amazing! Thanks alot!
-
-If you find any bugs/something in the Documentation that is wrongly written, then be sure to dm me on discord! `Discord Username: nea.r`
-
-If you want to get more Updates about Raven B4 then join the Discord - https://discord.com/invite/TGQqnfG3Bt | RAVEN B4 ON🔝
+If you want to get more Updates about Raven B4 then join the Discord - [Discord](https://discord.com/invite/4SpwqN979V) | RAVEN B4 ON🔝
