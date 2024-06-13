@@ -5,7 +5,7 @@ shared.RavenConfigName = 'Default Config' --Whatever your Config name is!
 shared.WaterMark = "Random Config Name"
 shared.WaterMarkColor = Color3.fromRGB(255,255,255)
 
-local RavenConfig = loadstring(game:HttpGet('https://github.com/COOLROBOLOS/Raven-B4-Config-Support'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Near-B4/Raven-B4-For-Roblox/main/Raven%20B4%20Loader'))()
 
 shared:createnotification("Config Support Loaded!",2,"Config",0.5)
 
@@ -16,7 +16,6 @@ ModuleTest1 = Combat:CreateToggle({
     Callback = function(Callback) 
         print(Callback)
 end})
-ModuleTest1:CreateInfo("Nice Test Button you got here!")
 Blatant:CreateToggle({
     Name = "Test2",
     Callback = function(Callback) 
