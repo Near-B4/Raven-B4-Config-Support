@@ -18,7 +18,7 @@
 `REQUIRED` To make your first Raven B4 config, you must firstly link the Raven B4 loader in your script!
 ```lua
 shared.RavenB4Started = true
-local RavenConfig = loadstring(game:HttpGet('https://raw.githubusercontent.com/goinglikeatrainlol/RavenB4Roblox/main/Raven%20Main%20Loader'))()
+local RavenConfig = loadstring(game:HttpGet('https://raw.githubusercontent.com/Near-B4/Raven-B4-For-Roblox/main/Raven%20B4%20Loader'))()
 ```
 
 `shared.RavenB4Started` is very IMPORTANT since it tells Raven B4 that your making a Config. (IF YOU DO NOT HAVE `shared.RavenB4Started` THE CONFIGS WON'T WORK!)
