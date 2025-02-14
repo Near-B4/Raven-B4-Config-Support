@@ -108,7 +108,7 @@ shared:createnotification(
     0.5  -- Optional animation duration  
 )  
 ```  
-## 📢 Array Animations  
+## 🎨 Array Animations  
 Display whatever color you want in a gradient like animation:
 
 ```lua
